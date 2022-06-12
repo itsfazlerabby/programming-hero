@@ -95,7 +95,7 @@ th, td{
 }
 .inner{
     background-color: tomato;
-    transform: scale(2);
+    transform: rotate(30deg);
 }
 
 
