@@ -1,5 +1,5 @@
 /* ===================== PSUDO CLASS ======================== */
-input:focus{
+/* input:focus{
     font-weight: 700;
     color: green;
     border: 1px solid red;
@@ -13,11 +13,11 @@ a:visited{
     color: rgb(53, 15, 223);
     background-color: rgb(187, 177, 177);
     width: 200px;
-}
+} */
 
 
 /* ===================== PSUDO ELEMENT ======================== */
-.psudo h2::before{
+/* .psudo h2::before{
     content: "Hello ";
     color: blue;
     background-color: #a7e4a7;
@@ -26,20 +26,20 @@ a:visited{
     content: "Hello ";
     color: rgb(24, 124, 24);
     background-color: #a7e4a7;
-}
+} */
 
 /* ========== PSUDO INCREMENT ========== */
-.psudo{
+/* .psudo{
     counter-reset: section;
 }
 .psudo p::before{
     counter-increment: section;
     content: "Hello " counter(section) ": ";
-}
+} */
 
 
 /* ===================== POSITION ======================== */
-.container{
+/* .container{
     width: 800px;
     height: 300px;
     background-color: skyblue;
@@ -68,24 +68,24 @@ a:visited{
     width: 200px;
     height: 200px;
     background-color: yellow;
-}
+} */
 
 
 /* ===================== 6 - Table ======================== */
-table{
+/* table{
     border-collapse: collapse;
 }
 th, td{
     border: 1px solid black;
 }
+ */
 
 
 
 
 
-
-/* ===================== 7 - Transform ======================== */
-.box{
+/* ===================== 7 - Transform/Transition ======================== */
+/* .box{
     width: 100px;
     height: 100px;
     border: 1px solid gray;
@@ -95,7 +95,95 @@ th, td{
 }
 .inner{
     background-color: tomato;
-    transform: rotate(30deg);
+}
+.inner:hover{
+    transition: 3s ease 1s;
+    transform: rotate(-60deg);
+} */
+
+
+
+
+/* ===================== 7 - Bat/Ball transform ======================== */
+/* .cricket{
+
+}
+.bat{
+    width: 250px;
+}
+.bat:hover{
+    transform: rotate(-60deg);
+    transform-origin: 100% 0;
+    transition: transform .5s;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: sienna;
+    position: relative;
+    left: 370px;
+    margin-top: -20px;
+}
+.cricket:hover .ball{
+    transform: translate(950px, -150px);
+    transition: transform 1s ease .4s;
+} */
+
+
+
+
+
+
+/* ===================== 7 - Ball Pendulam ======================== */
+/* body{
+    margin: 0;
+}
+@keyframes ballAnimation {
+    0%{
+        left: 100px;
+    }
+    50%{
+        top: 300px;
+        background-color: red;
+    }
+    100%{
+        left: 500px;
+        background-color: #9c38fa;
+    }
+}
+.field{
+    height: 500px;
+    width: 100%;
+    background-color: cyan;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: blue;
+    top: 200px;
+    left: 100px;
+    position: absolute;
+}
+.field:hover .ball{
+    animation: ballAnimation 2s ease-in-out 0s infinite alternate;
+} */
+
+
+
+
+
+/* ===================== 7 -  ======================== */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 200px) 400px;
+    grid-template-rows: repeat(2, 150px);
+    grid-gap: 5px; 
+}
+.box{
+    text-align: center;
+    border: 1px solid black;
 }
 
 
@@ -115,7 +203,15 @@ th, td{
 
 
 
-@media screen and (max-width: 320px){
+
+
+
+
+
+
+
+
+/* @media screen and (max-width: 320px){
     .container{
         background-color: lightgreen;
         width: 90%;
@@ -137,4 +233,4 @@ th, td{
         width: 100px;
         height: 50px;
     }
-}
+} */
