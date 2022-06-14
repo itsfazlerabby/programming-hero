@@ -174,15 +174,13 @@ th, td{
 
 
 
-/* ===================== 7 -  ======================== */
+/* ===================== 7 - Grid ======================== */
+/* 
 .grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr) 2fr;
     grid-template-rows: repeat(3, 100px);
     grid-gap: 30px 18px;
-    /* grid-template-columns: repeat(2, 100px) 200px 150px;
-    grid-template-rows: repeat(2, 150px);
-    grid-gap: 5px;  */
 }
 .box{
     text-align: center;
@@ -190,8 +188,6 @@ th, td{
 }
 .box1{
     background-color: #ef3155;
-    
-   /*  box 1 takes Rows 1 , 2, and 3 in Column 1.  */
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -199,29 +195,72 @@ th, td{
 }
 .box2{
     background-color: #fc46aa;
-    
-    /*  box 2 takes up Rows 1 , 2, and 3 in Column 2.  */
     grid-column: 2 / 3;
     grid-row: 1 / 4;
 }
 .box3{
     background-color: #fe7d68;
-  
-   /*  box 3 takes up Row 1 in Column 3  */
-    grid-area: 1 / 3 / 2 / 3;   /* row-start / column-start / row-end / column-end */
+    grid-area: 1 / 3 / 2 / 3;
 }
 .box4{
     background-color: #fc4c4e;
-  
-    /*  box 4 takes up Row 2 in Column 3  */
     grid-row: 2 / span 1;
     grid-column: 3 / span 1;
 }
 .box5{
     background-color: #a04242;
-    /*  box 6 takes up Row 4 in Column 1  */
-    grid-area: 3 / 3 / 4 / 3;   /* row-start / column-start / row-end / column-end */
+    grid-area: 3 / 3 / 4 / 3;
+} */
+
+
+
+/* ===================== 7 - Cleander ======================== */
+/* ul{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
 }
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    list-style: none;
+    background-color: #a7a6a6;
+    font-size: 2em;
+}
+.other-month{
+    background-color: #cfcbcb;
+} */
+
+
+
+
+/* ===================== 7 -  ======================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
