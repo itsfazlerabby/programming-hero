@@ -237,10 +237,27 @@ li{
 
 
 
-/* ===================== 7 -  ======================== */
-
-
-
+/* ===================== 7 - Responsive without @Media ======================== */
+/* .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.food{
+    width: 320px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+.food p{
+    text-align: justify;
+    padding: 5px;
+}
+.food img{
+    width: 200px;
+} */
 
 
 
