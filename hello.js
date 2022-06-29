@@ -1,5 +1,5 @@
-console.log(91);
-console.log("Hello JavaScript")
+// console.log(91);
+// console.log("Hello JavaScript")
 
 
 // var num = "15.5";
